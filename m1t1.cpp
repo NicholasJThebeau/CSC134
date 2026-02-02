@@ -13,6 +13,11 @@
 using namespace std;
 int main()
 {
-    
+    // Greet user
+    cout << "Hello, User!" << endl;
+    cout << "What's your name?" << endl;
+    string name;
+    cin >> name;
+    cout << "Nice to meet you,  " << name << endl;
     return 0;
 }
