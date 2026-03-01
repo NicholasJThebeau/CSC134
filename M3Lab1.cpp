@@ -47,12 +47,12 @@ int main(){
     cin>>Start;
     // Ask user, if they meant to run the program. 
  
-      if (Start == "N" or Start == "n")
+      if (Start == "N" || Start == "n")
     {
         cout<<"Program will now close"<<endl;
         
     }else{
-         while (Start == "Y" or "Y" ) // Did not want to deal with transform. 
+         while (Start == "Y" || "Y" ) // Did not want to deal with transform. 
         {
         
             cout<<"Would you like to number fight(1), or greeting(2)"<<endl;    
@@ -64,7 +64,7 @@ int main(){
              cout<<"Pick a number 1 through 99"<<endl;
              cin>>number_pick;
            
-             while (number_pick >= 100 or number_pick <= 0) // Force Correct Number selection
+             while (number_pick >= 100 || number_pick <= 0) // Force Correct Number selection
                 {
                     cout<<"Please Pick a number greater then 0, and below 100"<<endl;
                     cin>>number_pick;
@@ -84,7 +84,7 @@ int main(){
             cout<<"Would you like to continue? (Y/N)"<<endl;
             cin>>Start;
 
-            if (Start == "n" or Start == "N")
+            if (Start == "n" || Start == "N")
             {
                 cout<<"The Program will not close"<<endl;
                 break;
