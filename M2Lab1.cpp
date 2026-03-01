@@ -47,7 +47,7 @@ int main(){
     //Display the calculated data.
     cout << "The volume of the crate is " ;
     cout << volume << " cubic feet. \n";
-    cout << "cost to build: $" << cost << charge << endl;
+    cout << "cost to build: $" << cost << endl;
     cout << "charge to customer: $" << charge << endl;
     cout << "Profit: $"<<profit<<endl;
     
