@@ -1,3 +1,8 @@
+//CSC 134
+// m3t2
+// Nicholas Thebeau
+// 3/2/2026
+
 #include <iostream>
 #include <cmath>    
 #include <ctime>
