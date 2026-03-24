@@ -19,7 +19,7 @@ int GetValidNumber(){ // Seprated for SOLID principles
     while (cin.fail()|| Number > 12 || Number < 1) // Check for Fails, and validity
     {
         cin.clear(); // Try again
-        cin.ignore(numeric_limits<streamsize>::max(),'\n'); //Remove any buffers/failed content.
+        cin.ignore(numeric_limits<streamsize>::max(),'\n'); //Remove any buffers/failed content.da
         cout<<"Please Enter a Valid Number from 1 to 12:\n";
         cin>>Number;
     };

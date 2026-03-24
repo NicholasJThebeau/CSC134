@@ -1,0 +1,319 @@
+#include <iostream>
+#include <limits>
+using namespace std;
+
+/*
+CSC 134
+M5LAB1 - Choose Your Own Adventure
+Nicholas Thebau
+3/24/2026
+*/
+//Function Prototypes
+void main_menu();
+//First
+void choice_front_door(); // 1
+void choice_window(); // 2
+void choice_aroundback(); // 3
+
+//1a
+void choice_kitchen(); 
+void choice_rubble();
+
+//1b
+void ending_sneakattack();
+void ending_callout();
+
+// 2a
+void ending_call_for_help();
+
+
+// 3a
+void choice_shed();
+void ending_backdoor();
+
+void ending_kock();
+//3c
+
+
+int main(){
+    cout<<"M5Lab1 - Choose your own adventure"<<endl;
+    main_menu();
+    cout<<"Thank you for playing!\n";
+    
+    return 0;
+}
+
+
+void main_menu(){
+    int decision;
+    cout<<"You've Made it to the home. The door is open already? Where do you go?\n";
+    cin>>decision;
+    cout<<"Option 1: Look through the side window\n";
+    cout<<"Option 2: Go through the door \n";
+    cout<<"Option 3: Go around back\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        choice_window();
+    }else if (decision == 2)
+    {
+        choice_front_door();
+    }else if (decision == 3)
+    {
+        choice_aroundback();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        main_menu();        
+    }
+    
+ 
+    
+
+
+
+}
+
+
+
+    //Function Definitions
+
+    //First
+
+void choice_front_door(){
+    int decision;
+    cout<<"As you enter the room, you notice the T.V on. Your living room looks as if a hurrican as ran through it\n";
+    cin>>decision;
+    cout<<"Option 1: Go to kitchen\n";
+    cout<<"Option 2: look through the rubble\n";
+    cout<<"Option 3: Exit House\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        choice_rubble();
+    }else if (decision == 2)
+    {
+        choice_kitchen();
+    }else if (decision == 3)
+    {
+        main_menu();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        choice_front_door();        
+    }
+    
+ 
+    
+
+
+
+}
+
+void choice_window(){
+     int decision;
+    cout<<"As you look through the side window you notice a man, looking through the cabniets in the kitchen\n";
+    cin>>decision;
+    cout<<"Option 1: Call for help\n";
+    cout<<"Option 2: Continue to back\n";
+    cout<<"Option 3: Go to front door\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        ending_call_for_help();
+    }else if (decision == 2)
+    {
+        choice_front_door();
+    }else if (decision == 3)
+    {
+        main_menu();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        choice_window();        
+    } 
+}
+   
+void choice_aroundback(){
+  int decision;
+    cout<<"around back you notice the back door is open, on the shed you see your sisters hair tie.\n";
+    cin>>decision;
+    cout<<"Option 1: Go to Shed\n";
+    cout<<"Option 2: Enter Back door\n";
+    cout<<"Option 3: Back to the front\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        choice_shed();
+    }else if (decision == 2)
+    {
+        ending_backdoor();
+    }else if (decision == 3)
+    {
+        main_menu();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        choice_aroundback();        
+    } 
+}
+    
+    //Second
+void choice_kitchen(){
+    
+    int decision;
+    cout<<"inside of the kitchen you see a man distracted looking through cabniets.\n";
+    cin>>decision;
+    cout<<"Option 1: Sneak attack!\n";
+    cout<<"Option 2: Call out!\n";
+    cout<<"Option 3: Back to living room\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        ending_sneakattack();
+    }else if (decision == 2)
+    {
+        ending_callout();
+    }else if (decision == 3)
+    {
+        choice_front_door();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        choice_kitchen();        
+    } 
+
+
+}; 
+
+void choice_rubble(){
+    int decision;
+    cout<<"In the rubble you see your phone.\n";
+    cin>>decision;
+    cout<<"Option 1: Call for help\n";
+    cout<<"Option 2: Go to the kitchen\n";
+    cout<<"Option 3: leave the house\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        ending_call_for_help();
+    }else if (decision == 2)
+    {
+        choice_kitchen();
+    }else if (decision == 3)
+    {
+        main_menu();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        choice_rubble();        
+    } 
+}
+
+void choice_shed(){
+    int decision;
+    cout<<"Once at the shed you notice it's locked, but your hear rustling.\n";
+    cin>>decision;
+    cout<<"Option 1: Knock\n";
+    cout<<"Option 2: Call out\n";
+    cout<<"Option 3: Back to front\n";
+    cout<<"Option 4: Quit";
+
+
+
+    if (decision == 1)
+    {
+        ending_call_for_help();
+    }else if (decision == 2)
+    {
+        choice_kitchen();
+    }else if (decision == 3)
+    {
+        main_menu();
+    }else if (decision == 4)
+    {
+        main();
+    }else{
+        cout << "Please Select a valid option \n";
+        cin.ignore();
+        choice_rubble();        
+    } 
+
+
+}
+
+    //Ending
+void ending_sneakattack(){
+    cout<<"You take advantage of the fact he's not paying attention.\n";
+    cout<<"You look around and notice your dads baseball bat, grab it and close your eyes.\n";
+    cout<<"Count to three and swing\n";
+    cout<<"The intrude hits the ground, you run for your phone and call for help\n";
+    cout<<"The police arive, and there is a man hunt for your sister.\n";
+    cout<<"(You'll have to play another time to find her)\n";
+    main();
+}
+void ending_callout(){
+
+    cout<<"The intrude hears the noise.\n";
+    cout<<"you try to run away but he manages to catch up\n";
+    cout<<"You have been caught your fate lies within his hands\n";
+    cout<<"(better luck next time)\n";
+    main();
+}
+void ending_call_for_help(){
+    cout<<"You take your phone, and find somewhere to hide.\n";
+    cout<<"You call for help, they arrive within minutes\n";
+    cout<<"There is a hunt for your sister\n";
+    cout<<"(you'll need to play again to find her)\n";
+    main();
+}
+void ending_backdoor(){
+    cout<<"As you enter through the back door\n";
+    cout<<"You are noticed and captured, your fate lies within the burgalars hands\n";
+    cout<<"(better luck next time)\n";
+    main();
+}
+void ending_kock(){
+    cout<<"You lightly tap on the door whispering your sister name.\n";
+    cout<<"She quickly and quietly opens the door and pulls you in\n";
+    cout<<"She informs you there's a man inside looking for something, and she's notified the police\n";
+    cout<<"The Police and your parents arrive within minutes\n";
+    cout<<"You are safe for now, but the man got awau\n";
+    main();
+}
