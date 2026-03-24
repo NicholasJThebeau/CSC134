@@ -331,7 +331,7 @@ void ending_sneakattack(){
     cout << "The intrude hits the ground, you run for your phone and call for help\n";
     cout << "The police arive, and there is a man hunt for your sister.\n";
     cout << "(You'll have to play another time to find her)\n";
-    main();
+    return;
 }
 
 void ending_callout(){
@@ -339,7 +339,7 @@ void ending_callout(){
     cout << "you try to run away but he manages to catch up\n";
     cout << "You have been caught your fate lies within his hands\n";
     cout << "(better luck next time)\n";
-    main();
+    return;
 }
 
 void ending_call_for_help(){
@@ -347,14 +347,14 @@ void ending_call_for_help(){
     cout << "You call for help, they arrive within minutes\n";
     cout << "There is a hunt for your sister\n";
     cout << "(you'll need to play again to find her)\n";
-    main();
+    return;
 }
 
 void ending_backdoor(){
     cout << "As you enter through the back door\n";
     cout << "You are noticed and captured, your fate lies within the burgalars hands\n";
     cout << "(better luck next time)\n";
-    main();
+    return;
 }
 
 void ending_knock(){   // renamed from ending_kock
@@ -363,5 +363,5 @@ void ending_knock(){   // renamed from ending_kock
     cout << "She informs you there's a man inside looking for something, and she's notified the police\n";
     cout << "The Police and your parents arrive within minutes\n";
     cout << "You are safe for now, but the man got awau\n";
-    main();
+    return;
 }
