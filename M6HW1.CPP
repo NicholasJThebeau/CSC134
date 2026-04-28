@@ -1,3 +1,8 @@
+// M5LAB2
+// Nicholas Thebeau
+// 3/24/2026
+// Gold
+
 #include <random>
 #include <map>
 #include <ctime>
